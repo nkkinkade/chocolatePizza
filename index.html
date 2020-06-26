@@ -6,71 +6,90 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <img src="images/logo.png" alt="Logo" id="logo">
-      <h1>Delicious</h1>
-      <p>THE BEST FOOD BLOG ON THE WEB.</p>
-      <ul>
-        <li><a href=""><img src="images/fb-icon.png" alt="Facebook"></a></li>
-        <li><a href=""><img src="images/twit-icon.png" alt="Twitter"></a></li>
-        <li><a href=""></a><img src="images/gp-icon.png" alt="Google"></li>
-        <li><a href=""></a><img src="images/insta-icon.png" alt="Instagram"></li>
-        <li><a href=""></a><img src="images/flic-icon.png" alt="Im assuming Flic?"></li>
-        <li><a href=""></a><img src="images/pint-icon.png" alt="Pinterest"></li>
-        <li><a href=""></a><img src="images/rss-icon.png" alt="Rss icon?"></li>
-        <li><a href=""></a><img src="images/mail-icon.png" alt="Mail"></li>
-      </ul>
-      <div class="line"></div>
+      <img class="logo" src="images/logo.png" alt="Logo" id="logo">
+      <h1 class="logo">Delicious</h1>
+      <p class="logo">THE BEST FOOD BLOG ON THE WEB.</p>
+      <nav>
+        <ul>
+          <li><a href=""></a><img src="images/fb-icon.png" alt="FB Logo"></li>
+          <li><a href=""></a><img src="images/twit-icon.png" alt="Twitter"></li>
+          <li><a href=""></a><img src="images/gp-icon.png" alt="Google"></li>
+          <li><a href=""></a><img src="images/insta-icon.png" alt="Instagram"></li>
+          <li><a href=""></a><img src="images/flic-icon.png" alt="Im assuming Flic?"></li>
+          <li><a href=""></a><img src="images/pint-icon.png" alt="Pinterest"></li>
+          <li></li>
+          <li><a href=""></a><img id="rss" src="images/rss-icon.png" alt="Rss icon?"></li>
+          <li><a href=""></a><img src="images/mail-icon.png" alt="Mail"></li>
+        </ul>
+      </nav>
+      <img class="line" src="images/line.PNG" alt="border line">
     </header>
     <main>
       <h2>Chocolate Pizza</h2>
-      <div></div>
+      <div class="text">
+        POSTED ON 15 DEC 2013/DESSERTS
+      </div>
+      <div id="print"><img src="images/print-icon.png" alt="Print">PRINT</div>
       <img src="images/choco-pizza.png" alt="Chocolate Pizza" id="pizza">
-      <p>
-        For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.<br><br>Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.<br><br>Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.
+      <p class="tab">
+        For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.
+      </p> 
+      <p class="tab">
+        Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely
+        dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.
+      </p> 
+      <p class="tab" id="last">
+        Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.
       </p>
       <section>
-        <img src="images/list-bg.png" alt="Notepad Image">
+        <!-- <img src="images/list-bg.png" alt="Notepad Image"> -->
         <form>
-          <input type="checkbox" id="milk">
-          <label for="milk">1 1/2 cups milk</label><br>
-          <input type="checkbox" id="mascarpone">
-          <label for="mascarpone">1/2 cup Mascarpone</label><br>
-          <input type="checkbox" id="salt">
-          <label for="salt">1/2 tsp pink salt</label><br>
-          <input type="checkbox" id="figs">
-          <label for="figs">1 lb Black Mission Figs</label><br>
-          <input type="checkbox" id="brown-sugar">
-          <label for="brown-sugar">1/2 cup brown sugar</label><br>
-          <input type="checkbox" id="water">
-          <label for="water">2-4 tbsp water</label><br>
-          <input type="checkbox" id="cream">
-          <label for="cream">1 1/2 cups heavy cream</label><br>
-          <input type="checkbox" id="sugar">
-          <label for="sugar">1/3 granulated sugar</label><br>
-          <input type="checkbox" id="yolks">
-          <label for="yolks">2 egg yolks</label><br>
-          <input type="checkbox" id="lemon">
-          <label for="lemon">1 lemon, juiced</label><br>
-          <input type="checkbox" id="butter">
-          <label for="butter">2 tbsp butter</label><br>
-          <input type="checkbox" id="pecans">
-          <label for="pecans">1 cup honey roasted pecans, roughly chopped</label><br>
+          <fieldset>
+            <input type="checkbox" id="milk">
+            <label for="milk">1 1/2 cups milk</label><br>
+            <input type="checkbox" id="mascarpone">
+            <label for="mascarpone">1/2 cup Mascarpone</label><br>
+            <input type="checkbox" id="salt">
+            <label for="salt">1/2 tsp pink salt</label><br>
+            <input type="checkbox" id="figs">
+            <label for="figs">1 lb Black Mission Figs</label><br>
+            <input type="checkbox" id="brown-sugar">
+            <label for="brown-sugar">1/2 cup brown sugar</label><br>
+            <input type="checkbox" id="water">
+            <label for="water">2-4 tbsp water</label><br>
+          </fieldset>
+          <fieldset>
+            <input type="checkbox" id="cream">
+            <label for="cream">1 1/2 cups heavy cream</label><br>
+            <input type="checkbox" id="sugar">
+            <label for="sugar">1/3 granulated sugar</label><br>
+            <input type="checkbox" id="yolks">
+            <label for="yolks">2 egg yolks</label><br>
+            <input type="checkbox" id="lemon">
+            <label for="lemon">1 lemon, juiced</label><br>
+            <input type="checkbox" id="butter">
+            <label for="butter">2 tbsp butter</label><br>
+            <input type="checkbox" id="pecans">
+            <label for="pecans">1 cup honey roasted pecans, roughly chopped</label><br>
+          </fieldset>
 
         </form>
 
       </section>
-      <div class="line"></div>
+    
       <article>
-
-        <img src="images/van-pic.png" alt="Vanessa Stevenson">
+        <img class="line" src="images/line.PNG" alt="border line">
+        <img id="vanessa" src="images/van-pic.png" alt="Vanessa Stevenson">
         <h3>Vanessa Stevenson</h3>
-        <p>Food Enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+        <p>Food Enthusiast, photography fan. Add a pinch of raw foodism and that's <br>pretty much who I am.</p>
         <button>Share Recipe</button>
+   
       </article>
 
 
@@ -78,6 +97,12 @@
       
     </main>
     <footer> 
+      <div class="logo-container">
+        <img class="logo2" src="images/small-logo.png" alt="apple logo"></img>
+        <span class="logo-line"></span>
+    </div>
+    
+
       <p>Delicious &copy; 2013 &middot; All Rights Reserved.</p>
       <p>Proudly published with Ghost</p>
       
